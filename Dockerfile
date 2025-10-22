@@ -13,10 +13,7 @@ RUN curl -fsSL https://ollama.ai/install.sh | sh
 # Expose Ollama
 EXPOSE 11434
 
-
+# Run entrypoint
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-
-# Start Ollama server
-CMD ["ollama", "serve"]
