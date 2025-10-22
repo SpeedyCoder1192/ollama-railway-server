@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+export OLLAMA_HOST="0.0.0.0"
+export OLLAMA_ORIGINS="*"
+
 echo "Starting Ollama server..."
 ollama serve &
 
