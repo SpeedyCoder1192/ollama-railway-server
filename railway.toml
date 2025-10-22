@@ -1,0 +1,5 @@
+[deploy]
+startCommand = "ollama serve"
+
+[build]
+builder = "dockerfile"
