@@ -3,6 +3,7 @@ set -e
 
 export OLLAMA_HOST="0.0.0.0"
 export OLLAMA_ORIGINS="*"
+export OLLAMA_API_KEY="768e4e73d65a418d8d9c85b74b10a9aa.IwkxumohfDNPKVKb67ZvxfiF"
 
 echo "Starting Ollama server..."
 ollama serve &
