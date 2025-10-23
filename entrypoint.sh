@@ -13,6 +13,9 @@ until curl -s http://localhost:11434/api/version > /dev/null; do
   sleep 2
 done
 
+echo "Logging in..."
+ollama login
+
 echo "Pulling models..."
 for model in qwen3-coder:480b-cloud gpt-oss:120b-cloud gpt-oss:20b-cloud deepseek-v3.1:671b-cloud; do
   ollama pull "$model"
